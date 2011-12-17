@@ -22,7 +22,6 @@ int main(int argc, char** argv)
 		{
 			v.back().push_back(v[v.size()-2][i]+v[v.size()-2][i+1]);
 		}
-		std::cout << v.back().size() << std::endl;
 		if(v.back().size()==1) break;
 	}
 	for(auto it=v.rbegin(); it!=v.rend(); ++it)
